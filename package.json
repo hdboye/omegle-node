@@ -1,7 +1,7 @@
 {
-  "name": "omegle-node",
-  "version": "1.1.4",
-  "description": "Node.js API for Omegle",
+  "name": "omegle-node-fix",
+  "version": "1.1.5",
+  "description": "Fixed Node.js API for Omegle, because the original probably wasnt gonna check the pull requests.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
     "chat",
     "strangers"
   ],
-  "author": "dumptyd",
+  "author": "hdboye",
   "license": "MIT",
   "dependencies": {
     "request": "^2.73.0"
@@ -23,6 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dumptyd/omegle-node.git"
+    "url": "git+https://github.com/hdboye/omegle-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hdboye/omegle-node/issues"
+  },
+  "homepage": "https://github.com/hdboye/omegle-node#readme",
+  "directories": {
+    "example": "examples"
   }
 }

@@ -1,16 +1,16 @@
-# omegle-node - Unofficial node.js API for Omegle
+# omegle-node-fix - Unofficial fixed node.js API for Omegle
 
-[![NPM](https://nodei.co/npm/omegle-node.png)](https://npmjs.org/package/omegle-node)
+[![NPM](https://nodei.co/npm/omegle-node-fix.png)](https://npmjs.org/package/omegle-node-fix)
 
-[![npm version](https://badge.fury.io/js/omegle-node.png)](https://badge.fury.io/js/omegle-node)
+[![npm version](https://badge.fury.io/js/omegle-node-fix.png)](https://badge.fury.io/js/omegle-node-fix)
 
-omegle-node is an unofficial API for Omegle which can be used to connect and interact with people on omegle without actually going to the website.
+omegle-node-fix is an unofficial API for Omegle which can be used to connect and interact with people on omegle without actually going to the website. This is a fixed version of omegle-node, originally created by dumptyd.
 
 <hr>
 
 ## Installation
 
-    npm install omegle-node
+    npm install omegle-node-fix
 
 <hr>
 
@@ -94,7 +94,7 @@ Check out `examples/omegle.js` to get a hang of how this works.
 ### Example
 
 ```javascript
-var Omegle = require('omegle-node');
+var Omegle = require('omegle-node-fix');
 var om = new Omegle(); //create an instance of `Omegle`
 
 //This will print any errors that might get thrown by functions
