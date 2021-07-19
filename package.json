@@ -1,6 +1,6 @@
 {
   "name": "omegle-node-fix",
-  "version": "1.1.5",
+  "version": "1.1.7",
   "description": "Fixed Node.js API for Omegle, because the original probably wasnt gonna check the pull requests.",
   "main": "index.js",
   "scripts": {
