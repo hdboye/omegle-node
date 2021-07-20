@@ -16,7 +16,7 @@
   "author": "hdboye",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.73.0"
+    "node-fetch": "*"
   },
   "engines": {
     "node": ">=6.3.0"

@@ -1,6 +1,6 @@
 //jshint node:true
 //jshint esversion:6
-var request = require('request');
+var fetch = require('node-fetch');
 var ee = require('events').EventEmitter;
 var util = require('util');
 var qs = require('querystring');
@@ -50,8 +50,8 @@ var Omegle = function () {
 			options.headers['Content-Length'] = qs.stringify(data).length;
 			options['form'] = qs.stringify(data);
 		}
-		request(options, function (error, response, body) {
-			if (!error && response.statusCode == 200) {
+		fetch(options.url, options.headers).then(res =>{
+			if (res != null) {
 				if(workingServers.indexOf(url) < 0){
 					workingServers.push(url);
 				}
@@ -65,6 +65,22 @@ var Omegle = function () {
 				return callback(false, error);
 			}
 		});
+		
+		/* request(options, function (error, response, body) {
+			if (!error && response.statusCode == 200) {
+				if(workingServers.indexOf(url) < 0){
+					workingServers.push(url);
+				}
+				return callback(body, null);
+			}
+			else {
+				var index = workingServers.indexOf(url);
+				if (index > -1) {
+					workingServers.splice(index, 1);	//so that we don't use it again
+				}
+				return callback(false, error);
+			}
+		}); */
 	};
 	this.connect = function (topics = false, spyMode = false) {
 		this.updateServer();
